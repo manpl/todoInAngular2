@@ -7,6 +7,7 @@
     }
   },
   "scripts":{
-	"update":"jspm update"
+	"update":"jspm update",
+	"start":"start tsc2 --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators todoApp.ts & start http://localhost:8080 & http-server "
   }
 }
