@@ -1,32 +1,10 @@
 /// <reference path="typings/angular2/angular2.d.ts" />
+/// <reference path="ItemsLocalStorageRepository.ts" />
+
 import {Component, View, bootstrap, NgFor} from 'angular2/angular2';
+import { ItemsRepository } from 'ItemsRepository';
+import { ItemsLocalStorageRepository } from 'ItemsLocalStorageRepository'
 
-interface ItemsRepository {
-	add(item:String);
-	remove();
-	getAll();
-}
-
-
-class ItemsLocalStorageRepository implements ItemsRepository {	
-	items: Array<String>;
-
-	constructor(){
-		this.items = ['angular2', 'angular', 'something else'];
-	}
-	
-	add(item:String){
-		this.items.push(item);
-	}
-	
-	remove(){
-		
-	}
-	
-	getAll() : Array<String>{
-		return this.items;
-	}
-}
 
 // Annotation section
 @Component({
