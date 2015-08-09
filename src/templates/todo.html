@@ -1,5 +1,8 @@
 <article>
-	<header><input type="text"></input></header>
+	<header>
+		<input #item (keyup)=doneTyping($event) ></input>
+		<button (click)="addTodo(item.value)">Add</button>
+	</header>
 	<ul>
 		<li *ng-for="#item of items">
 		{{item}}
