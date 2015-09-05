@@ -9,5 +9,9 @@
   "scripts": {
     "update": "jspm update",
     "start": "start tsc --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators todoApp.ts & start http://localhost:8080 & http-server "
+  },
+  "devDependencies": {
+    "tsc": "^1.20150623.0",
+    "tsd": "^0.6.4"
   }
 }
