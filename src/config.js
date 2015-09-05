@@ -1,16 +1,11 @@
 System.config({
-  "baseURL": "/",
-  "transpiler": "traceur",
-  "paths": {
-    "*": "*.js",
-    "github:*": "jspm_packages/github/*.js"
+  baseURL: "/src",
+  //defaultJSExtensions: true,
+  transpiler: "traceur",
+  paths: {
+    "github:*": "jspm_packages/github/*"
+  },
+  map: {
+    "rx": 'https://rawgit.com/Reactive-Extensions/RxJS/master/dist/rx.js'
   }
 });
-
-System.config({
-  "map": {
-    "traceur": "github:jmcriffey/bower-traceur@0.0.88",
-    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
-  }
-});
-

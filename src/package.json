@@ -6,8 +6,8 @@
       "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88"
     }
   },
-  "scripts":{
-	"update":"jspm update",
-	"start":"start tsc2 --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators todoApp.ts & start http://localhost:8080 & http-server "
+  "scripts": {
+    "update": "jspm update",
+    "start": "start tsc --watch -m commonjs -t es5 --emitDecoratorMetadata --experimentalDecorators todoApp.ts & start http://localhost:8080 & http-server "
   }
 }
