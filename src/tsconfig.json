@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "sourceMap": true,
+        "target": "es5",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "files":[
+            "todoApp.ts",
+            "ItemsRepository.ts",
+            "ItemsLocalStorageRepository.ts"
+        ]
+}
